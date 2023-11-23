@@ -1,0 +1,11 @@
+@import "SASS/base/reset.scss";
+@import "SASS/base/fonts.scss";
+@import "SASS/utils/variables.scss";
+@import "SASS/layout/header.scss";
+@import "SASS/pages/restaurants.scss";
+@import "SASS/pages/homepage.scss";
+
+body {
+    width: 100%;
+    scroll-behavior: smooth;    
+}
