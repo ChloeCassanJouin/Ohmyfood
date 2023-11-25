@@ -1,0 +1,21 @@
+* {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+
+  H2, h3, h4, p {
+    font-family: $font_family_roboto;
+    text-decoration-style: unset;
+    color: $eleventh-color;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-family: "Shrikhand", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0px;
+}

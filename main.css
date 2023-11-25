@@ -57,14 +57,50 @@ table {
   border-spacing: 0;
 }
 
+* {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+H2, h3, h4, p {
+  font-family: "Roboto", sans-serif;
+  text-decoration-style: unset;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0px;
+}
+
 .header {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
-.header__logo {
-  padding: 20px;
+.header__restaurants {
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.header__icon-arrow {
+  display: flex;
+}
+.header__picture {
+  width: 105%;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  position: static;
 }
 .header .searchbar {
   background-color: #EAEAEA;
@@ -86,7 +122,7 @@ table {
   justify-content: center;
 }
 .description__section .explore__button__text {
-  color: white;
+  color: blue;
   text-decoration: none;
   font-family: "roboto";
   font-size: 16px;
@@ -95,7 +131,54 @@ table {
   border-radius: 25px;
   margin-bottom: 40px;
 }
-.description__section .explore__button--LinearGradientBackground {
+
+.menu {
+  background-color: #F6F6F6;
+  padding: 20px 15px 0 15px;
+  border-radius: 35px 35px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  bottom: 55px;
+}
+.menu .menu__restaurant-name {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.menu .icon-heart {
+  width: 50px;
+  display: flex;
+  align-items: center;
+}
+.menu article {
+  display: flex;
+  background-color: #FFFFFF;
+  padding: 15px;
+  margin-bottom: 15px;
+  width: 300px;
+  border-radius: 15px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.menu .price {
+  display: flex;
+  align-items: flex-end;
+}
+.menu .order-button-container {
+  display: flex;
+  justify-content: center;
+}
+.menu .order-button {
+  color: white;
+  font-family: "roboto";
+  font-size: 16px;
+  padding: 1em 3em 1em 3em;
+  border-radius: 25px;
+  margin-bottom: 40px;
+}
+.menu .order-button-LinearGradientBackground {
   background: linear-gradient(to top, #9356DC, #FF79DA);
   box-shadow: 0px 5px 5px grey;
 }
@@ -103,4 +186,4 @@ table {
 body {
   width: 100%;
   scroll-behavior: smooth;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
