@@ -1,23 +1,76 @@
-
-
 .description__section {
     background:$octonary-color;
     display: flex;
     flex-direction: column;
-    padding: 30px;
-    
-    .explore__button {
+    padding: 40px 25px 50px 25px;
+    gap: 40px;
+}
+.reservez-text {
+    font-weight: 700;
+    font-size: 26px;
+    display: flex;
+    text-align: center;
+    font-family: $font_family_1;
+}
+
+.decouvrez-text {
+    font-weight: 300;
+    font-size: 18px;
+    display: flex;
+    text-align: center;
+    font-family: $font_family_1;
+}
+
+.explore__button__container {
+    display: flex;
+    justify-content: center;
+}
+.explore__button {
+    color: white;
+    font-family: "roboto";
+    font-size: 16px;
+    padding: 1em 3em 1em 3em;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    transition: opacity 300ms, box-shadow 500ms;
+
+    &--LinearGradientBackground {
+      background: $cd-btn;
+      box-shadow: 0px 5px 10px rgb(184, 183, 183); 
+      &:hover {
+        opacity: 0.9;
+        box-shadow: 0px 0px 15px rgb(165, 164, 164); 
+      }
+    }
+  }
+
+.function__card {
+    background-color: $octonary-color;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.restaurant__container {
+    background-color: $octonary-color;
+}
+
+.restaurant__card {
+    background-color: white;
+    border-radius: 15px;
+    margin: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    &__image {
+        width: 330px;
+        height: 200px;
+        border-radius: 15px;
+    }
+    &___text {
         display: flex;
-        justify-content: center;
-        &__text{
-            color: blue;
-            text-decoration: none;
-            font-family: "roboto";
-            font-size: 16px;
-            font-weight: 500;
-            padding: 1em 3em 1em 3em;
-            border-radius: 25px;
-            margin-bottom: 40px; 
-        }
     }
 }

@@ -12,9 +12,12 @@ $nonary-color:#353535;
 $denary-color: #7E7E7E;
 $eleventh-color: black;
 
+// linearGradient
+$cd-btn: linear-gradient(to top, $main-color, $secondary-color);
 
 
 // FONTS
-$font_family_shrikhand         : 'Shrikhand', serif;
-$font_family_roboto            : 'Roboto', sans-serif;
+$font_family_1            : 'Roboto', sans-serif;
+$font_family_2         : 'Shrikhand', serif;
+
 
