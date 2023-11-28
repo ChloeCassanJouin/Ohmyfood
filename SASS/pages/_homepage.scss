@@ -1,10 +1,8 @@
 .description__section {
     background:$octonary-color;
-    width: 91%;
     display: flex;
     flex-direction: column;
     padding: 40px 25px 50px 25px;
-    gap: 40px;
 }
 .reservez-text {
     font-weight: 700;
@@ -12,6 +10,8 @@
     display: flex;
     text-align: center;
     font-family: $font_family_1;
+    margin-bottom: 20px;
+    padding: 0px 20px 0px 20px;
 }
 
 .decouvrez-text {
@@ -20,6 +20,7 @@
     display: flex;
     text-align: center;
     font-family: $font_family_1;
+    margin-bottom: 30px;
 }
 
 .explore__button__container {
@@ -46,10 +47,8 @@
   }
 
   .function_container {
-    padding-top: 40px;
-    padding-left: 15px;
-    padding-bottom: 40px;
-    gap: 25px;
+    padding: 60px 25px 40px 25px;
+    gap: 35px;
     display: flex;
     flex-direction: column;
   }
@@ -68,6 +67,7 @@
     &__text {
         display: flex;
         gap: 20px;
+        align-items: center;
     }
 }
 
@@ -90,21 +90,18 @@
 
 .restaurant__container {
     background-color: $octonary-color;
-    padding-top: 45px;
-    padding-bottom: 100px;
-    width: 105%;
+    padding: 45px 20px 100px 20px;
 }
 
 .restaurant__card {
     background-color: white;
     border-radius: 15px;
-    margin: 15px;
     border-radius: 15px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     &__image {
-        width: 350px;
         height: 200px;
         border-radius: 15px 15px 0px 0px;
     }

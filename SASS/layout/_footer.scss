@@ -1,24 +1,27 @@
 .footer {
-    width: 100%;
     background-color: $nonary-color;
     color: white;
     padding: 20px;
-    position: relative;
     bottom: 55px;
     &__white-ohmyfood{
         margin-bottom: 15px;
     }
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
     &__icon-txt {
         display:flex;
     }
-    &__icon-txt__li{
-        padding-bottom: 10px;
-    }
+
     .fa-utensils  {
-        padding-right: 15px;
-    }
-    .fa-handshake {
         padding-right: 10px;
+    }
+    .fa-handshake-angle {
+        padding-right: 10px;
+        display: flex;
+        align-items: center;
         
     }
 }
