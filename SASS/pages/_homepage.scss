@@ -88,12 +88,12 @@
     color: $main-color;
 }
 
-.restaurant__container {
+.restaurant-container {
     background-color: $octonary-color;
     padding: 45px 20px 100px 20px;
 }
 
-.restaurant__card {
+.restaurant-card {
     background-color: white;
     border-radius: 15px;
     border-radius: 15px;
@@ -105,7 +105,23 @@
         height: 200px;
         border-radius: 15px 15px 0px 0px;
     }
-    &___text {
+    &__title {
         display: flex;
+        flex-direction: row;
+        padding: 20px;
+        justify-content: space-between;
+    }
+    &__text {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 800;
+    }
+    &__heart {
+        display: flex;
+        align-items: center;
     }
 }

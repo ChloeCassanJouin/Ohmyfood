@@ -100,6 +100,11 @@ h4 {
   font-size: 14px;
 }
 
+p {
+  font-weight: 300;
+  font-size: 17px;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -271,12 +276,12 @@ h4 {
   color: #9356DC;
 }
 
-.restaurant__container {
+.restaurant-container {
   background-color: #F6F6F6;
   padding: 45px 20px 100px 20px;
 }
 
-.restaurant__card {
+.restaurant-card {
   background-color: white;
   border-radius: 15px;
   border-radius: 15px;
@@ -285,12 +290,28 @@ h4 {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.restaurant__card__image {
+.restaurant-card__image {
   height: 200px;
   border-radius: 15px 15px 0px 0px;
 }
-.restaurant__card___text {
+.restaurant-card__title {
   display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: space-between;
+}
+.restaurant-card__text {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.restaurant-card__name {
+  font-size: 18px;
+  font-weight: 800;
+}
+.restaurant-card__heart {
+  display: flex;
+  align-items: center;
 }
 
 .menu {
