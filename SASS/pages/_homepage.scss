@@ -7,7 +7,7 @@
 }
 .reservez-text {
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     display: flex;
     text-align: center;
     font-family: $font_family_1;
@@ -44,14 +44,26 @@
     }
   }
 
+  .function_container {
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-bottom: 40px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
 .function__card {
     background-color: $octonary-color;
     border-radius: 15px;
-    margin: 15px;
-    padding: 15px;
-    border-radius: 15px;
+    padding: 25px;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 10px rgb(206, 205, 205);
+    &__step{
+        @include number-function;
+    }
 }
 
 .restaurant__container {
@@ -64,6 +76,7 @@
     margin: 15px;
     border-radius: 15px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     &__image {
         width: 330px;
