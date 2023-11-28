@@ -1,5 +1,6 @@
 .description__section {
     background:$octonary-color;
+    width: 91%;
     display: flex;
     flex-direction: column;
     padding: 40px 25px 50px 25px;
@@ -55,8 +56,8 @@
 
 .function__card {
     background-color: $octonary-color;
-    border-radius: 15px;
-    padding: 25px;
+    border-radius: 20px;
+    padding: 30px 15px 20px 15px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
@@ -64,10 +65,26 @@
     &__step{
         @include number-function;
     }
+    &__text {
+        display: flex;
+        gap: 40px;
+    }
+}
+
+.fa-mobile-screen-button .fa-list  {
+    color: #7E7E7E;
+    display: flex;
+    align-items: center;
+}
+
+.fa-store {
+    color: $main-color;
 }
 
 .restaurant__container {
     background-color: $octonary-color;
+    padding-top: 45px;
+    padding-bottom: 100px;
 }
 
 .restaurant__card {

@@ -134,7 +134,7 @@ h4 {
 .header .searchbar {
   border-top: solid 3px rgb(209, 207, 207);
   background-color: #EAEAEA;
-  width: 100%;
+  width: 115%;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -168,6 +168,7 @@ h4 {
 
 .description__section {
   background: #F6F6F6;
+  width: 91%;
   display: flex;
   flex-direction: column;
   padding: 40px 25px 50px 25px;
@@ -224,8 +225,8 @@ h4 {
 
 .function__card {
   background-color: #F6F6F6;
-  border-radius: 15px;
-  padding: 25px;
+  border-radius: 20px;
+  padding: 30px 15px 20px 15px;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
@@ -233,7 +234,7 @@ h4 {
 }
 .function__card__step {
   position: relative;
-  right: 35px;
+  right: 25px;
   background: #9356DC;
   border-radius: 45px;
   padding: 6px 8px 6px 8px;
@@ -241,9 +242,25 @@ h4 {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
 }
+.function__card__text {
+  display: flex;
+  gap: 40px;
+}
+
+.fa-mobile-screen-button .fa-list {
+  color: #7E7E7E;
+  display: flex;
+  align-items: center;
+}
+
+.fa-store {
+  color: #9356DC;
+}
 
 .restaurant__container {
   background-color: #F6F6F6;
+  padding-top: 45px;
+  padding-bottom: 100px;
 }
 
 .restaurant__card {
