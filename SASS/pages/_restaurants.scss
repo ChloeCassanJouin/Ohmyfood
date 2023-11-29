@@ -1,11 +1,13 @@
+/* mobile first*/
+
 .menu {
     background-color: $quaternary-color;
-    padding: 20px 15px 0 15px;
+    padding: 20px 15px 40px 15px;
     border-radius: 35px 35px 0px 0px;
     display: flex;
     flex-direction: column;
     position: relative;
-    gap: 20px;
+    gap: 35px;
     margin-top: -55px;
     &__restaurant-top {
         display: flex;
@@ -34,12 +36,11 @@
         display: flex;
         background-color: #FFFFFF;
         padding: 15px;
-        margin-bottom: 15px;
         margin-top: 10px;
         border-radius: 15px;
         flex-wrap: wrap;
         justify-content: space-between;
-        box-shadow: 0px 2px 10px rgb(206, 205, 205);
+        box-shadow: 0px 3px 10px rgb(221, 218, 218);
       }
     
       .course__text {
@@ -67,9 +68,8 @@
         color: white;
         font-family: "roboto";
         font-size: 16px;
-        padding: 1em 3em 1em 3em;
+        padding: 18px 55px 18px 55px;
         border-radius: 25px;
-        margin-bottom: 40px;
         transition: opacity 300ms, box-shadow 500ms;
         &--LinearGradientBackground {
           background: $cd-btn;
@@ -79,11 +79,22 @@
             box-shadow: 0px 0px 15px rgb(165, 164, 164); 
           }
         }
-      }
-    
-        
-    
-      
+      }  
+  }
+
+  /*responsive tablet & desktop*/
+@media screen and (min-width: 768px) {
+.menu {
+  margin: -55px 190px 0px 190px;
+  padding: 40px 200px 40px 200px;
+  &__restaurant-top {
+    justify-content: center;
+    gap: 40px;
+  }
+  &__course-title {
+    width: 4%;
+  }
+}
   }
 
 

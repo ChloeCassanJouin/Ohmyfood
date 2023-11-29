@@ -1,3 +1,5 @@
+/* mobile first*/
+
 .description__section {
     background:$octonary-color;
     display: flex;
@@ -30,8 +32,8 @@
 .explore__button {
     color: white;
     font-family: "roboto";
-    font-size: 16px;
-    padding: 1em 3em 1em 3em;
+    padding: 18px 20px 18px 20px;
+    font-size: 14px;
     border-radius: 25px;
     margin-bottom: 20px;
     transition: opacity 300ms, box-shadow 500ms;
@@ -56,11 +58,11 @@
 .function__card {
     background-color: $octonary-color;
     border-radius: 20px;
-    padding: 30px 15px 20px 15px;
+    padding: 20px 15px 20px 15px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
-    box-shadow: 0px 2px 10px rgb(206, 205, 205);
+    box-shadow: 0px 3px 10px rgb(221, 218, 218);
     &__step{
         @include number-function;
     }
@@ -73,24 +75,25 @@
 
 .fa-mobile-screen-button {
     color: #7E7E7E;
-    display: flex;
-    align-items: center;
-    line-height: 0;
+    position: relative;
+    bottom: 5px;
 }
 
 .fa-list  {
     color: #7E7E7E;
-    display: flex;
-    align-items: center;
+    position: relative;
+    bottom: 5px;
 }
 
 .fa-store {
     color: $main-color;
+    position: relative;
+    bottom: 5px;
 }
 
 .restaurant-container {
     background-color: $octonary-color;
-    padding: 45px 20px 100px 20px;
+    padding: 45px 20px 70px 20px;
 }
 
 .restaurant-card {
@@ -104,6 +107,7 @@
     &__image {
         height: 200px;
         border-radius: 15px 15px 0px 0px;
+        object-fit: cover;
     }
     &__title {
         display: flex;
@@ -120,8 +124,80 @@
         font-size: 18px;
         font-weight: 800;
     }
+    &__nouveau {
+        font-weight: 500;
+        font-size: 14px;
+        border: $tertiary-color;
+        background-color: $tertiary-color;
+        padding: 8px 10px 8px 10px;
+        position: relative;
+        bottom: 260px;
+        left: 240px;
+        color: $twelfth-color;
+        width: 55px;
+    }
     &__heart {
         display: flex;
         align-items: center;
     }
 }
+
+/*responsive tablet & desktop*/
+@media screen and (min-width: 768px) {
+    .description__section {
+
+        padding: 40px 25px 10px 25px;
+    }
+    .reservez-text {
+        justify-content: center;
+        font-size: 40px;
+        margin-bottom: 30px;;
+    }
+
+    .decouvrez-text {
+        justify-content: center;
+    }
+
+    .allcards__container {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .fa-mobile-screen-button, .fa-list, .fa-store {
+        position: static;
+    }
+
+    .function__card {
+        padding: 20px 80px 20px 15px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h2 { 
+        padding-left: 345px;
+    }
+
+    .restaurant__allcards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 340px;
+        padding-right: 340px;
+    }
+
+    .restaurant-card__image {
+        width: 480px;
+        height: 170px;
+    }
+
+    .restaurant-card__nouveau {
+        position: relative;
+        bottom: 235px;
+        left: 390px;
+    }
+      }

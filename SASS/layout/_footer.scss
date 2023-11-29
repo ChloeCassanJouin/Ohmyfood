@@ -1,10 +1,10 @@
+/* mobile first*/
 .footer {
     background-color: $nonary-color;
     color: white;
-    padding: 20px;
-    bottom: 55px;
+    padding: 30px;
     &__white-ohmyfood{
-        margin-bottom: 15px;
+        margin-bottom: 25px;
     }
     &__links {
         display: flex;
@@ -22,6 +22,30 @@
         padding-right: 10px;
         display: flex;
         align-items: center;
-        
     }
+}
+
+  /*responsive tablet & desktop*/
+  @media screen and (min-width: 768px) {
+    .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    padding: 80px 60px 15px 15px;
+    &__white-ohmyfood {
+    margin-bottom: 10px;
+    }
+    &__links {
+        display: flex;
+        flex-direction: row;
+        margin-right: 30px;
+    }
+    &__icon-txt {
+        padding-right: 30px;
+        gap: 10px;
+    }
+    &__icon-txt-1 {
+        display: flex;
+    }
+}
 }

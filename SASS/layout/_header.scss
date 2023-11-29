@@ -1,15 +1,20 @@
+/* mobile first*/
 .header {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;   
-    &__top{
+    &__top {
       width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: center;
       padding-top: 15px;
-      padding-bottom: 10px;
+      padding-bottom: 5px;
+    }
+    &__logo {
+      width: 162px;
+      height: 44px;
     }
     &__picture {
       width: 100%;
@@ -19,7 +24,7 @@
       position: static;
     }
 
-.fa-arrow-left {
+a {
   color: black;
   position: relative;
   right: 50px;
@@ -45,4 +50,24 @@
       font-size: 16px;
     }
 }  
+}
+
+/*responsive tablet & desktop*/
+@media screen and (min-width: 768px) {
+  .header__top {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .header__picture {
+    object-fit: cover;
+  }
+
+  .header .searchbar {
+    border-top: 0px;
+  }
+
+  .searchbar__city {
+    padding-left: 0px;
+  }
 }
