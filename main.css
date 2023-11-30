@@ -162,6 +162,11 @@ p {
   .header__top {
     padding-top: 15px;
     padding-bottom: 15px;
+    justify-content: center;
+  }
+  .header__logo {
+    width: 200px;
+    height: 34px;
   }
   .header__picture {
     -o-object-fit: cover;
@@ -188,8 +193,14 @@ p {
   flex-direction: column;
   gap: 10px;
 }
-.footer__icon-txt {
+.footer__icon-txt__all {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__icon-txt__lign {
+  display: flex;
+  flex-direction: row;
 }
 .footer .fa-utensils {
   padding-right: 10px;
@@ -206,22 +217,27 @@ p {
     display: flex;
     flex-direction: row-reverse;
     justify-content: right;
-    padding: 80px 60px 15px 15px;
+    padding: 75px 60px 25px 15px;
   }
   .footer__white-ohmyfood {
     margin-bottom: 10px;
+  }
+  .footer ul {
+    padding-right: 50px;
   }
   .footer__links {
     display: flex;
     flex-direction: row;
     margin-right: 30px;
   }
-  .footer__icon-txt {
-    padding-right: 30px;
-    gap: 10px;
-  }
-  .footer__icon-txt-1 {
+  .footer__icon-txt__all {
+    margin-right: 30px;
     display: flex;
+    flex-direction: row;
+    gap: 0px;
+  }
+  .footer .fa-handshake-angle {
+    padding-left: 10px;
   }
 }
 /* mobile first*/
@@ -404,20 +420,22 @@ p {
   h3 {
     font-size: 16px;
   }
-  h2 {
-    padding-left: 345px;
+  .category-title {
+    padding-left: 90px;
   }
   .restaurant__allcards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 340px;
-    padding-right: 340px;
+    padding-left: 7%;
+    padding-right: 7%;
   }
   .restaurant-card__image {
-    width: 480px;
+    width: 490px;
     height: 170px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .restaurant-card__nouveau {
     position: relative;
@@ -505,14 +523,18 @@ p {
 /*responsive tablet & desktop*/
 @media screen and (min-width: 768px) {
   .menu {
-    margin: -55px 190px 0px 190px;
-    padding: 40px 200px 40px 200px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15%;
+    padding-right: 15%;
   }
   .menu__restaurant-top {
     justify-content: center;
     gap: 40px;
   }
-  .menu__course-title {
+  .menu .menu__course-title {
     width: 4%;
   }
 }

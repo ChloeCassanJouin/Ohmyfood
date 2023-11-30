@@ -85,13 +85,17 @@
   /*responsive tablet & desktop*/
 @media screen and (min-width: 768px) {
 .menu {
-  margin: -55px 190px 0px 190px;
-  padding: 40px 200px 40px 200px;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 15%;
+  padding-right: 15%;
   &__restaurant-top {
     justify-content: center;
     gap: 40px;
   }
-  &__course-title {
+  .menu__course-title {
     width: 4%;
   }
 }

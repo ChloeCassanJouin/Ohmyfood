@@ -57,6 +57,11 @@ a {
   .header__top {
     padding-top: 15px;
     padding-bottom: 15px;
+    justify-content: center;
+  }
+  .header__logo {
+    width: 200px;
+    height: 34px;
   }
 
   .header__picture {

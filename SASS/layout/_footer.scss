@@ -11,9 +11,17 @@
         flex-direction: column;
         gap: 10px;
     }
-    &__icon-txt {
-        display:flex;
+    &__icon-txt__all {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+   
     }
+    &__icon-txt__lign {
+        display: flex;
+        flex-direction: row;
+    }
+    
 
     .fa-utensils  {
         padding-right: 10px;
@@ -31,21 +39,26 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: right;
-    padding: 80px 60px 15px 15px;
+    padding: 75px 60px 25px 15px;
     &__white-ohmyfood {
     margin-bottom: 10px;
+    }
+    ul {
+        padding-right: 50px;
     }
     &__links {
         display: flex;
         flex-direction: row;
         margin-right: 30px;
     }
-    &__icon-txt {
-        padding-right: 30px;
-        gap: 10px;
-    }
-    &__icon-txt-1 {
+    &__icon-txt__all {
+        margin-right: 30px;
         display: flex;
+        flex-direction: row;
+        gap: 0px;
+    }
+    .fa-handshake-angle {
+        padding-left: 10px;;
     }
 }
 }

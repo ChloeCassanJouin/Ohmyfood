@@ -177,8 +177,8 @@
         font-size: 16px;
     }
 
-    h2 { 
-        padding-left: 345px;
+    .category-title { 
+        padding-left: 90px;
     }
 
     .restaurant__allcards {
@@ -186,13 +186,14 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-left: 340px;
-        padding-right: 340px;
+        padding-left: 7%;
+        padding-right: 7%;
     }
 
     .restaurant-card__image {
-        width: 480px;
+        width: 490px;
         height: 170px;
+        object-fit: cover;
     }
 
     .restaurant-card__nouveau {
