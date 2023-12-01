@@ -1,204 +1,221 @@
 /* mobile first*/
 
-.description__section {
+/* description-section*/
+.description-container {
     background:$octonary-color;
     display: flex;
     flex-direction: column;
-    padding: 40px 25px 50px 25px;
-}
-.reservez-text {
-    font-weight: 700;
-    font-size: 24px;
-    display: flex;
-    text-align: center;
-    font-family: $font_family_1;
-    margin-bottom: 20px;
-    padding: 0px 20px 0px 20px;
-}
+    padding: 40px 2px 40px 2px;
 
-.decouvrez-text {
-    font-weight: 300;
-    font-size: 18px;
-    display: flex;
-    text-align: center;
-    font-family: $font_family_1;
-    margin-bottom: 30px;
-}
+        @media (min-width:$min-width-tablet) {
+            padding: 40px 25px 10px 25px;
+        }
 
-.explore__button__container {
-    display: flex;
-    justify-content: center;
-}
-.explore__button {
-    color: white;
-    font-family: "roboto";
-    padding: 18px 20px 18px 20px;
-    font-size: 14px;
-    border-radius: 25px;
-    margin-bottom: 20px;
-    transition: opacity 300ms, box-shadow 500ms;
+        &__title {
+            font-weight: 700;
+            font-size: 24px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-family: $font_family_1;
+            margin-bottom: 20px;
+            padding: 0px 20px 0px 20px;
 
-    &--LinearGradientBackground {
-      background: $cd-btn;
-      box-shadow: 0px 5px 10px rgb(184, 183, 183); 
-      &:hover {
-        opacity: 0.9;
-        box-shadow: 0px 0px 15px rgb(165, 164, 164); 
-      }
-    }
-  }
+            @media (min-width:$min-width-tablet) {
+                font-size: 40px;
+                margin-bottom: 30px;
+            }
+        }
 
-  .function_container {
-    padding: 60px 25px 40px 25px;
-    gap: 35px;
-    display: flex;
-    flex-direction: column;
-  }
+        &__subtitle {
+            font-weight: 300;
+            font-size: 18px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-family: $font_family_1;
+            margin-bottom: 30px;
 
-.function__card {
-    background-color: $octonary-color;
-    border-radius: 20px;
-    padding: 20px 15px 20px 15px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    box-shadow: 0px 3px 10px rgb(221, 218, 218);
-    &__step{
-        @include number-function;
-    }
-    &__text {
-        display: flex;
-        gap: 20px;
-        align-items: center;
-    }
+            @media (min-width:$min-width-tablet) {
+
+            }
+        }
+
+        .explore__button__container {
+            display: flex;
+            justify-content: center;
+        }
+        .explore__button {
+            color: white;
+            font-family: "roboto";
+            padding: 18px 20px 18px 20px;
+            font-size: 14px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+
+            &--LinearGradientBackground {
+            background: $cd-btn;
+            box-shadow: 0px 5px 10px rgb(184, 183, 183); 
+            }
+        }
 }
 
-.fa-mobile-screen-button {
-    color: #7E7E7E;
-    position: relative;
-    bottom: 5px;
-}
+/* fonctionnement-section*/
+.function-container {
+padding: 60px 25px 40px 25px;
+gap: 35px;
+display: flex;
+flex-direction: column;
 
-.fa-list  {
-    color: #7E7E7E;
-    position: relative;
-    bottom: 5px;
-}
-
-.fa-store {
-    color: $main-color;
-    position: relative;
-    bottom: 5px;
-}
-
-.restaurant-container {
-    background-color: $octonary-color;
-    padding: 45px 20px 70px 20px;
-}
-
-.restaurant-card {
-    background-color: white;
-    border-radius: 15px;
-    border-radius: 15px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    &__image {
-        height: 200px;
-        border-radius: 15px 15px 0px 0px;
-        object-fit: cover;
-    }
-    &__title {
-        display: flex;
-        flex-direction: row;
-        padding: 20px;
-        justify-content: space-between;
-    }
-    &__text {
-        display: flex;
-        gap: 5px;
-        flex-direction: column;
-    }
-    &__name {
-        font-size: 18px;
-        font-weight: 800;
-    }
-    &__nouveau {
-        font-weight: 500;
-        font-size: 14px;
-        border: $tertiary-color;
-        background-color: $tertiary-color;
-        padding: 8px 10px 8px 10px;
-        position: relative;
-        bottom: 260px;
-        left: 240px;
-        color: $twelfth-color;
-        width: 55px;
-    }
-    &__heart {
-        display: flex;
-        align-items: center;
-    }
-}
-
-/*responsive tablet & desktop*/
-@media screen and (min-width: 768px) {
-    .description__section {
-
-        padding: 40px 25px 10px 25px;
-    }
-    .reservez-text {
-        justify-content: center;
-        font-size: 40px;
-        margin-bottom: 30px;;
-    }
-
-    .decouvrez-text {
-        justify-content: center;
+    .category-title {
+        @media (min-width:$min-width-tablet) {
+            padding-bottom: 5px;
+            padding-left: 10%;
+        }
     }
 
     .allcards__container {
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-        justify-content: center;
-    }
-
-    .fa-mobile-screen-button, .fa-list, .fa-store {
-        position: static;
+        @media (min-width:$min-width-tablet) {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+        }
     }
 
     .function__card {
-        padding: 20px 80px 20px 15px;
+        background-color: $octonary-color;
+        border-radius: 20px;
+        padding: 20px 15px 20px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        box-shadow: 0px 3px 10px rgb(221, 218, 218);
+
+        @media (min-width:$min-width-tablet) {
+            padding: 25px 80px 25px 15px;
+        }
+
+            &__step{
+                @include number-function;
+            }
+
+            &__text {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+            }
+        }
+
+    .fa-mobile-screen-button {
+        color: #7E7E7E;
+        position: relative;
+        bottom: 5px;
+    }
+
+    .fa-list  {
+        color: #7E7E7E;
+        position: relative;
+        bottom: 5px;
+    }
+
+    .fa-store {
+        color: $main-color;
+        position: relative;
+        bottom: 5px;
+    }
+
+    .fa-mobile-screen-button, .fa-list, .fa-store {
+        @media (min-width:$min-width-tablet) {
+            position: static;
+        }
     }
 
     h3 {
-        font-size: 16px;
+        @media (min-width:$min-width-tablet) {
+            font-size: 16px;
+        }
     }
+}
 
-    .category-title { 
-        padding-left: 90px;
-    }
+/* restaurants-section*/
+.restaurant-container {
+    background-color: $octonary-color;
+    padding: 35px 20px 70px 20px;
 
     .restaurant__allcards {
+        @media (min-width:$min-width-tablet) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+    }
+
+    .restaurant-card {
+        background-color: white;
+        border-radius: 15px;
+        border-radius: 15px;
+        margin-top: 20px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-between;
-        padding-left: 7%;
-        padding-right: 7%;
-    }
 
-    .restaurant-card__image {
-        width: 490px;
-        height: 170px;
-        object-fit: cover;
-    }
+        &__image {
+            height: 200px;
+            border-radius: 15px 15px 0px 0px;
+            object-fit: cover;
 
-    .restaurant-card__nouveau {
-        position: relative;
-        bottom: 235px;
-        left: 390px;
+            @media (min-width:$min-width-tablet) { 
+                width: 490px;
+                height: 170px;
+                object-fit: cover;
+            }
+        }
+
+        &__title {
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            justify-content: space-between;
+        }
+
+        &__text {
+            display: flex;
+            gap: 5px;
+            flex-direction: column;
+        }
+
+        &__name {
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        &__nouveau {
+            font-weight: 500;
+            font-size: 14px;
+            border: $tertiary-color;
+            background-color: $tertiary-color;
+            padding: 8px 10px 8px 10px;
+            position: relative;
+            bottom: 260px;
+            left: 240px;
+            color: $twelfth-color;
+            width: 55px;
+
+            @media (min-width:$min-width-tablet) {
+                position: relative;
+                bottom: 235px;
+                left: 390px;
+             }
+        }
+
+        &__heart {
+            display: flex;
+            align-items: center;
+        }
     }
-      }
+}
+
