@@ -9,22 +9,41 @@
     position: relative;
     gap: 35px;
     margin-top: -55px;
-    &__restaurant-top {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 10px;
+
+    @media (min-width:$min-width-tablet) {
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 15%;
+        padding-right: 15%;
       }
 
-      .menu__restaurant-top__title {
+        &__restaurant-top {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+
+            @media (min-width:$min-width-tablet) {
+              justify-content: center;
+              gap: 40px;
+            }
+          }
+
+      &__restaurant-top__title {
         font: $font_family_2;
         font-size: 28px;
       }
 
-      .menu__course-title {
+      &__course-title {
         @include course-main-title;
         width: 12%;
         padding-bottom: 5px;
         border-bottom: solid 3px #99E2D0;
+
+        @media (min-width:$min-width-tablet) {
+          width: 4%;
+        }
       }
 
       .icon-heart {
@@ -80,25 +99,6 @@
           }
         }
       }  
-  }
-
-  /*responsive tablet & desktop*/
-@media screen and (min-width: 768px) {
-.menu {
-  margin-left: 15%;
-  margin-right: 15%;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 15%;
-  padding-right: 15%;
-  &__restaurant-top {
-    justify-content: center;
-    gap: 40px;
-  }
-  .menu__course-title {
-    width: 4%;
-  }
-}
   }
 
 

@@ -69,6 +69,8 @@ flex-direction: column;
 
     @media (min-width:$min-width-desktop) {
         padding: 60px 0px 40px 0px;
+        padding-left: 12%;
+        padding-right: 12%;
     }
 
     .category-title {
@@ -97,7 +99,6 @@ flex-direction: column;
         border-radius: 20px;
         padding: 20px 15px 20px 15px;
         display: flex;
-        flex-wrap: wrap;
         margin-bottom: 20px;
         box-shadow: 0px 3px 10px rgb(221, 218, 218);
 
@@ -106,7 +107,8 @@ flex-direction: column;
         }
 
         @media (min-width:$min-width-desktop) {
-            padding: 25px 50px 25px 15px;
+            padding: 25px 0px 25px 15px;
+            
         }
 
             &__step{
@@ -120,22 +122,14 @@ flex-direction: column;
             }
         }
 
-    .fa-mobile-screen-button {
+    .fa-mobile-screen-button, .fa-list {
         color: #7E7E7E;
-        position: relative;
-        bottom: 5px;
-    }
-
-    .fa-list  {
-        color: #7E7E7E;
-        position: relative;
-        bottom: 5px;
+        @include function-icon-position;
     }
 
     .fa-store {
         color: $main-color;
-        position: relative;
-        bottom: 5px;
+        @include function-icon-position;
     }
 
     .fa-mobile-screen-button, .fa-list, .fa-store {
@@ -155,6 +149,9 @@ flex-direction: column;
 .restaurant-container {
     background-color: $octonary-color;
     padding: 35px 20px 70px 20px;
+    @media (min-width:$min-width-desktop) {
+        padding: 35px 0px 70px 0px;
+    }
 
     .restaurant__allcards {
         @media (min-width:$min-width-tablet) {
@@ -164,6 +161,10 @@ flex-direction: column;
             justify-content: space-between;
             padding-left: 10%;
             padding-right: 10%;
+        }
+        @media (min-width:$min-width-desktop) {
+            padding-left: 12%;
+            padding-right: 12%;
         }
     }
 
@@ -226,8 +227,8 @@ flex-direction: column;
 
             @media (min-width:$min-width-tablet) {
                 position: relative;
-                bottom: 235px;
-                left: 390px;
+                bottom: 80%;
+                left: 76%;
              }
         }
 
