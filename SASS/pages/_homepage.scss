@@ -66,7 +66,6 @@ padding: 60px 25px 40px 25px;
 gap: 35px;
 display: flex;
 flex-direction: column;
-width: 100%
 
     @media (min-width:$min-width-desktop) {
         padding: 60px 0px 40px 0px;
@@ -79,6 +78,9 @@ width: 100%
     .category-title {
         @media (min-width:$min-width-tablet) {
             padding: 60px 20px 5px 20px;
+        }
+        @media (min-width:$min-width-desktop) {
+            padding: 0px 0px 0px 0px;
         }
     }
 
@@ -95,6 +97,10 @@ width: 100%
             gap: 5%;
             justify-content: center;
         }
+    }
+
+    .function__a {
+        width: 100%;
     }
 
 
@@ -153,7 +159,9 @@ width: 100%
     background-color: $octonary-color;
     padding: 35px 20px 70px 20px;
     @media (min-width:$min-width-desktop) {
-        padding: 35px 0px 70px 0px;
+        padding-left: 12%;
+        padding-right: 12%;
+        padding-bottom: 40px;
     }
 
     .restaurant__allcards {
@@ -162,13 +170,11 @@ width: 100%
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
-            padding-left: 10%;
-            padding-right: 10%;
         }
-        @media (min-width:$min-width-desktop) {
-            padding-left: 12%;
-            padding-right: 12%;
-        }
+    }
+
+    .restaurant__a {
+        width: 45%;
     }
 
     .restaurant-card {
@@ -234,6 +240,4 @@ width: 100%
             align-items: center;
         }
     }
-}
-
 }
