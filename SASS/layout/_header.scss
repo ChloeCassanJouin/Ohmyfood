@@ -5,7 +5,17 @@
     justify-content: center;
     flex-direction: column;  
 
-    &__top {
+
+    &__top__1 {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    &__top__2 {
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -13,10 +23,11 @@
       padding-top: 15px;
       padding-bottom: 5px;
 
-        @media (min-width:$min-width-tablet) {
-          padding-top: 25px;
-          padding-bottom: 25px;
-          justify-content: center;
+        @media (min-width:$min-width-desktop) {
+          display: flex;
+          flex-direction: column;
+          padding-top: 0px;
+          padding-bottom: 15px;
         }
     }
 
@@ -46,12 +57,25 @@
     color: black;
     position: relative;
     right: 50px;
+
+      @media (min-width:$min-width-tablet) {
+        object-fit: cover;
+        top: 20px;
+        left: 30px
+      }
   }
 
   .header__restaurants__icon-arrow {
     display: flex;
     align-items: center;
     width: 20px;
+  }
+
+  .header__logo__container {
+    @media (min-width:$min-width-tablet) {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   .searchbar {
