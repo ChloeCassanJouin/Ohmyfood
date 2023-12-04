@@ -62,7 +62,7 @@ table {
   margin-block-end: 0px;
 }
 
-H2, h3, h4, p, a {
+H2, h3, h4, p {
   font-family: "Roboto", sans-serif;
   text-decoration-style: unset;
   color: black;
@@ -70,6 +70,10 @@ H2, h3, h4, p, a {
 
 a {
   text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 li {
@@ -216,29 +220,15 @@ p {
   padding: 30px;
 }
 .footer__white-ohmyfood {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
-.footer__links {
+.footer ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.footer__icon-txt__all {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.footer__icon-txt__lign {
-  display: flex;
-  flex-direction: row;
-}
-.footer .fa-utensils {
+.footer .fa-handshake-angle, .footer .fa-utensils {
   padding-right: 10px;
-}
-.footer .fa-handshake-angle {
-  padding-right: 10px;
-  display: flex;
-  align-items: center;
 }
 
 /*responsive tablet & desktop*/
@@ -254,6 +244,7 @@ p {
   }
   .footer ul {
     padding-right: 50px;
+    gap: 5px;
   }
   .footer__links {
     display: flex;

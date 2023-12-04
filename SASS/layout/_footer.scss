@@ -4,34 +4,21 @@
     color: white;
     padding: 30px;
     &__white-ohmyfood{
-        margin-bottom: 25px;
-    }
-    &__links {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    &__icon-txt__all {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-   
-    }
-    &__icon-txt__lign {
-        display: flex;
-        flex-direction: row;
+        margin-bottom: 20px;
     }
     
-
-    .fa-utensils  {
-        padding-right: 10px;
-    }
-    .fa-handshake-angle {
-        padding-right: 10px;
+    ul {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        gap: 10px;
     }
+
+    .fa-handshake-angle, .fa-utensils  {
+        padding-right: 10px;
+    }
+
 }
+
 
   /*responsive tablet & desktop*/
   @media screen and (min-width: 768px) {
@@ -45,6 +32,7 @@
     }
     ul {
         padding-right: 50px;
+        gap: 5px;
     }
     &__links {
         display: flex;
