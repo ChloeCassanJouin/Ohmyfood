@@ -21,7 +21,7 @@
 
 
   /*responsive tablet & desktop*/
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $min-width-tablet) {
     .footer {
     display: flex;
     flex-direction: row-reverse;
@@ -30,23 +30,16 @@
     &__white-ohmyfood {
     margin-bottom: 10px;
     }
+
+    &__icon-text {
+        position: relative;
+        right: 8%;
+    }
+
     ul {
-        padding-right: 50px;
-        gap: 5px;
-    }
-    &__links {
         display: flex;
         flex-direction: row;
-        margin-right: 30px;
-    }
-    &__icon-txt__all {
-        margin-right: 30px;
-        display: flex;
-        flex-direction: row;
-        gap: 0px;
-    }
-    .fa-handshake-angle {
-        padding-left: 10px;;
+        padding-right: 100px;
     }
 }
 }

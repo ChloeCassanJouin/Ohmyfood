@@ -23,7 +23,7 @@
       padding-top: 15px;
       padding-bottom: 5px;
 
-        @media (min-width:$min-width-desktop) {
+        @media (min-width:$min-width-tablet) {
           display: flex;
           flex-direction: column;
           padding-top: 0px;
@@ -56,12 +56,13 @@
   a {
     color: black;
     position: relative;
-    right: 50px;
+    top: 15px;
+    right: 80px;
 
       @media (min-width:$min-width-tablet) {
         object-fit: cover;
-        top: 20px;
-        left: 30px
+        top: 25px;
+        left: 30px;
       }
   }
 
