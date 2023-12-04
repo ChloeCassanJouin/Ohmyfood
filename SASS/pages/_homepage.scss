@@ -1,7 +1,7 @@
 /* mobile first*/
 
 /* description-section*/
-.description-container {
+.description{
     background:$octonary-color;
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@
 }
 
 /* fonctionnement-section*/
-.function-container {
+.function {
 padding: 60px 25px 40px 25px;
 gap: 35px;
 display: flex;
@@ -84,7 +84,7 @@ flex-direction: column;
         }
     }
 
-    .allcards__container {
+    .allcards {
         @media (min-width:$min-width-tablet) {
             display: flex;
             flex-direction: column;
@@ -99,7 +99,7 @@ flex-direction: column;
         }
     }
 
-    .function__a {
+    .allcards__a {
         width: 100%;
     }
 
@@ -155,7 +155,7 @@ flex-direction: column;
 }
 
 /* restaurants-section*/
-.restaurant-container {
+.restaurant {
     background-color: $octonary-color;
     padding: 35px 20px 70px 20px;
     @media (min-width:$min-width-desktop) {
@@ -177,7 +177,7 @@ flex-direction: column;
         width: 45%;
     }
 
-    .restaurant-card {
+    .restaurant__card {
         background-color: white;
         border-radius: 15px;
         border-radius: 15px;
