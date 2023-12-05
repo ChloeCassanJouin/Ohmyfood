@@ -1,0 +1,52 @@
+.heart-icon--empty {
+  position: absolute;
+  color: black;
+}
+
+.heart-icon--full {
+ position: relative;
+ transform-origin: bottom;
+transform: scale(0);
+background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+background-clip: text;
+color: transparent;
+}
+
+.like {   
+&__checkbox {
+  display: none;
+
+  &:checked + .like__container {
+    .heart-icon--full {
+      animation: like 0.2s cubic-bezier(.87, .01, .38, 1.01) forwards;
+    }
+  }
+
+  &:not(:checked) + .like__container { 
+    .heart-icon--full { animation: unlike 0.5s ease forwards; }
+  } 
+}
+}
+
+@keyframes like {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes unlike {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}

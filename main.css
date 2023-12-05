@@ -485,10 +485,6 @@ p {
     left: 76%;
   }
 }
-.restaurant .restaurant__card__heart {
-  display: flex;
-  align-items: center;
-}
 
 /* mobile first*/
 .menu {
@@ -538,11 +534,6 @@ p {
   .menu__course-title {
     width: 4%;
   }
-}
-.menu .icon-heart {
-  width: 50px;
-  display: flex;
-  align-items: center;
 }
 .menu article {
   display: flex;
@@ -596,6 +587,51 @@ p {
   box-shadow: 0px 0px 15px rgb(165, 164, 164);
 }
 
+.heart-icon--empty {
+  position: absolute;
+  color: black;
+}
+
+.heart-icon--full {
+  position: relative;
+  transform-origin: bottom;
+  transform: scale(0);
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.like__checkbox {
+  display: none;
+}
+.like__checkbox:checked + .like__container .heart-icon--full {
+  animation: like 0.2s cubic-bezier(0.87, 0.01, 0.38, 1.01) forwards;
+}
+.like__checkbox:not(:checked) + .like__container .heart-icon--full {
+  animation: unlike 0.5s ease forwards;
+}
+
+@keyframes like {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes unlike {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
 .loader {
   position: fixed;
   display: flex;
