@@ -590,10 +590,12 @@ p {
 .heart-icon--empty {
   position: absolute;
   color: black;
+  font-size: 30px;
 }
 
 .heart-icon--full {
   position: relative;
+  font-size: 30px;
   transform-origin: bottom;
   transform: scale(0);
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
@@ -602,6 +604,10 @@ p {
   color: transparent;
 }
 
+.like {
+  display: flex;
+  align-items: flex-end;
+}
 .like__checkbox {
   display: none;
 }

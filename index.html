@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="main.css">
 </head>
 
-<!-- Loader container -->
-<div class="loader">
-    <div class="loader__spinner"></div>
-</div>
+
 
 <body>
-    <div class="loader-enabled">
+    <!-- Loader container -->
+    <div class="loader">
+        <div class="loader__spinner"></div>
+    </div>        <div class="loader-enabled">
         <header class="header">
             <div class="header__top__1">
                 <img class="header__logo" src="../assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
@@ -92,7 +92,7 @@
                         <h2 class="category-title">Restaurants</h2>
                     </div>
                     <div class="restaurant__allcards">
-                        <a class= "restaurant__a" href="#"><!--Carte 1-->
+                        <a class= "restaurant__a" href="HTML/restaurant_1.html"><!--Carte 1-->
                             <article class="restaurant__card">
                                 
                                 <img class="restaurant__card__image" src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image assiette au restaurant La palette du goût">
@@ -101,10 +101,14 @@
                                         <h3 class="restaurant__card__name">La palette du goût</h3>
                                         <p>Ménilmontant</p>
                                     </div>
-                                    <div class="restaurant__card__heart">
-                                        <i class="fa-regular fa-heart fa-xl"></i>
-                                    </div>
                                 </div>
+                                <div class="like">
+                                        <input type="checkbox" id="like__input" class="like__checkbox">
+                                        <label for="like__input" class="like__container">
+                                        <i class="fa-regular fa-heart fa-xl heart-icon--empty"></i>
+                                       <i class="fa-solid fa-heart fa-xl heart-icon--full"></i>
+                                       </label>
+                                   </div>
                             </article>
                             <p class="restaurant__card__nouveau">Nouveau</p>
                         </a>
@@ -116,9 +120,13 @@
                                         <h3 class="restaurant__card__name">La note enchantée</h3>
                                         <p>Charonne</p>
                                     </div>
-                                    <div class="restaurant__card__heart">
-                                        <i class="fa-regular fa-heart fa-xl"></i>
-                                    </div>
+                                    <div class="like">
+                                        <input type="checkbox" id="like__input" class="like__checkbox">
+                                        <label for="like__input" class="like__container">
+                                        <i class="fa-regular fa-heart fa-xl heart-icon--empty"></i>
+                                       <i class="fa-solid fa-heart fa-xl heart-icon--full"></i>
+                                       </label>
+                                   </div>
                                 </div>
                             </article>
                             <p class="restaurant__card__nouveau">Nouveau</p>
@@ -131,9 +139,13 @@
                                         <h3 class="restaurant__card__name">À la française</h3>
                                         <p>Cité Rouge</p>
                                     </div>
-                                    <div class="restaurant__card__heart">
-                                        <i class="fa-regular fa-heart fa-xl"></i>
-                                    </div>
+                                    <div class="like">
+                                        <input type="checkbox" id="like__input" class="like__checkbox">
+                                        <label for="like__input" class="like__container">
+                                        <i class="fa-regular fa-heart fa-xl heart-icon--empty"></i>
+                                       <i class="fa-solid fa-heart fa-xl heart-icon--full"></i>
+                                       </label>
+                                   </div>
                                 </div>
                             </article>
                         </a>
@@ -145,9 +157,13 @@
                                         <h3 class="restaurant__card__name">Le délice des sens</h3>
                                         <p>Folie-Méricourt</p>
                                     </div>
-                                    <div class="restaurant__card__heart">
-                                        <i class="fa-regular fa-heart fa-xl"></i>
-                                    </div>
+                                    <div class="like">
+                                        <input type="checkbox" id="like__input" class="like__checkbox">
+                                        <label for="like__input" class="like__container">
+                                        <i class="fa-regular fa-heart fa-xl heart-icon--empty"></i>
+                                       <i class="fa-solid fa-heart fa-xl heart-icon--full"></i>
+                                       </label>
+                                   </div>
                                 </div>
                             </article>
                         </a>
