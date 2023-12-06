@@ -14,5 +14,10 @@
 
 body {
     width: 100%;
-    scroll-behavior: smooth;    
-}
+    scroll-behavior: smooth; 
+    @media (min-width:$min-width-largedesktop) {
+        padding-right: 10%;
+        padding-left: 10%;
+        width: auto;
+      }
+}   

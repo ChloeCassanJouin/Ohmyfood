@@ -1,0 +1,56 @@
+.section__entries1 {
+    animation: fadein 1s;
+}
+.section__entries2 {
+    animation: fadein 2s;
+}
+.section__entries3 {
+    animation: fadein 3s;
+}
+
+.section__main-course1 {
+    animation: fadein 4s;
+}
+.section__main-course2 {
+    animation: fadein 5s;
+}
+.section__main-course3 {
+    animation: fadein 6s;
+}
+
+.section__dessert1 {
+    animation: fadein 7s;
+}
+.section__dessert2 {
+    animation: fadein 8s;
+}
+.section__dessert3 {
+    animation: fadein 9s;
+}
+    
+       @keyframes fadein { 
+        0% {
+            opacity:0;
+        }
+        20% {
+            opacity:0;
+        }
+        40% {
+            opacity:0.2;
+        }
+        60% {
+            opacity:0.5;
+        }
+        80% {
+            opacity:0.8;
+        }
+        100% {
+            opacity:1;
+        }
+    }
+  
+  
+  
+    
+    
+    
