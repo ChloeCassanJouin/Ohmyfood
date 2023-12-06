@@ -588,59 +588,53 @@ p {
 }
 
 .section__entries1 {
-  animation: fadein 1s;
+  animation: fadeInVisibility 0.5s ease-in-out forwards;
 }
 
 .section__entries2 {
-  animation: fadein 2s;
+  animation: fadeInVisibility 1s ease-in-out forwards;
 }
 
 .section__entries3 {
-  animation: fadein 3s;
+  animation: fadeInVisibility 1.5s ease-in-out forwards;
 }
 
 .section__main-course1 {
-  animation: fadein 4s;
+  animation: fadeInVisibility 2.5s ease-in-out forwards;
 }
 
 .section__main-course2 {
-  animation: fadein 5s;
+  animation: fadeInVisibility 3s ease-in-out forwards;
 }
 
 .section__main-course3 {
-  animation: fadein 6s;
+  animation: fadeInVisibility 3.5s ease-in-out forwards;
 }
 
 .section__dessert1 {
-  animation: fadein 7s;
+  animation: fadeInVisibility 4s ease-in-out forwards;
 }
 
 .section__dessert2 {
-  animation: fadein 8s;
+  animation: fadeInVisibility 4.5s ease-in-out forwards;
 }
 
 .section__dessert3 {
-  animation: fadein 9s;
+  animation: fadeInVisibility 5s ease-in-out forwards;
 }
 
-@keyframes fadein {
+@keyframes fadeInVisibility {
   0% {
     opacity: 0;
+    visibility: hidden;
   }
-  20% {
+  50% {
     opacity: 0;
-  }
-  40% {
-    opacity: 0.2;
-  }
-  60% {
-    opacity: 0.5;
-  }
-  80% {
-    opacity: 0.8;
+    visibility: hidden;
   }
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }
 .heart-icon--empty {
