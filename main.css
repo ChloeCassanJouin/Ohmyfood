@@ -515,6 +515,7 @@ p {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+  padding-right: 20px;
 }
 @media (min-width: 768px) {
   .menu__restaurant-top {
@@ -675,7 +676,7 @@ p {
 
 .heart-icon--full {
   position: relative;
-  font-size: 30px;
+  font-size: 25px;
   transform-origin: bottom;
   transform: scale(0);
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
