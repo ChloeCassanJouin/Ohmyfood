@@ -179,6 +179,7 @@ flex-direction: column;
 
     .restaurant__a {
         width: 45%;
+        padding-top: 19px;
     }
 
     .restaurant__card {
@@ -232,6 +233,12 @@ flex-direction: column;
             top: 5%;
             color: $twelfth-color;
             width: 55px;
+
+            @media (min-width:$min-width-desktop) { 
+                position: absolute;
+                left: 81%;
+                top: 5%;
+            }
         }
     }
 }

@@ -443,6 +443,7 @@ p {
 }
 .restaurant .restaurant__a {
   width: 45%;
+  padding-top: 19px;
 }
 .restaurant .restaurant__card {
   background-color: white;
@@ -494,6 +495,13 @@ p {
   top: 5%;
   color: #008766;
   width: 55px;
+}
+@media (min-width: 1024px) {
+  .restaurant .restaurant__card__nouveau {
+    position: absolute;
+    left: 81%;
+    top: 5%;
+  }
 }
 
 /* mobile first*/
