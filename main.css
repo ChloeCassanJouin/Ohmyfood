@@ -332,9 +332,7 @@ p {
 }
 @media (min-width: 1024px) {
   .function {
-    padding: 60px 0px 40px 0px;
-    padding-left: 12%;
-    padding-right: 12%;
+    padding: 60px 12% 40px 12%;
   }
 }
 @media (min-width: 768px) {
@@ -623,6 +621,10 @@ p {
 
 .section__entries3 {
   animation: fadeInVisibility 1.5s ease-in-out forwards;
+}
+
+.section__entries4 {
+  animation: fadeInVisibility 2s ease-in-out forwards;
 }
 
 .section__main-course1 {
