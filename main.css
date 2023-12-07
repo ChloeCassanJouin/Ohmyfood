@@ -436,6 +436,7 @@ p {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  position: relative;
 }
 .restaurant .restaurant__card__image {
   height: 200px;
@@ -472,7 +473,7 @@ p {
   border: #99E2D0;
   background-color: #99E2D0;
   padding: 8px 10px 8px 10px;
-  position: relative;
+  position: absolute;
   bottom: 80%;
   left: 76%;
   color: #008766;
