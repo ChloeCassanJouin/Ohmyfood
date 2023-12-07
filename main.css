@@ -473,17 +473,15 @@ p {
   background-color: #99E2D0;
   padding: 8px 10px 8px 10px;
   position: relative;
-  bottom: 260px;
-  left: 240px;
+  bottom: 80%;
+  left: 76%;
   color: #008766;
   width: 55px;
-}
-@media (min-width: 768px) {
-  .restaurant .restaurant__card__nouveau {
-    position: relative;
-    bottom: 80%;
-    left: 76%;
-  }
+  /*@media (min-width:$min-width-tablet) {
+      position: relative;
+      bottom: 80%;
+      left: 76%;
+   }*/
 }
 
 /* mobile first*/
@@ -496,12 +494,6 @@ p {
   position: relative;
   gap: 35px;
   margin-top: -55px;
-  /*&__course__card:hover &__cart {
-    margin-right: 0em;
-  }*/
-  /*&__cart:target {
-    height: 100px;
-  }*/
 }
 @media (min-width: 768px) {
   .menu {
@@ -552,28 +544,14 @@ p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu__cart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
-  width: 4em;
-  margin-right: -4em;
-  border-radius: 0 15px 15px 0;
-  transition: 700ms ease;
-}
-.menu__cart__icon {
-  color: white;
-  font-size: 25px;
-}
-.menu__course__card:active .menu__cart {
-  margin-right: 0em;
-}
 .menu .course__text {
   display: flex;
   flex-direction: column;
+  flex: 2;
   gap: 5px;
   padding: 15px 0 15px 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .price {
   display: flex;
@@ -663,6 +641,25 @@ p {
     visibility: visible;
   }
 }
+.menu__cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  width: 5em;
+  margin-right: -5em;
+  transition: 700ms ease;
+}
+.menu__cart__icon {
+  color: white;
+  font-size: 25px;
+}
+
+.menu__course__card:hover .menu__cart {
+  margin-right: 0em;
+}
+
 .heart-icon--empty {
   position: absolute;
   color: black;
