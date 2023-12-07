@@ -1,0 +1,54 @@
+&__cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $tertiary-color;
+    border-radius: 0 15px 15px 0;
+    width: 4em;
+
+    transform-origin: -4em;
+    /*margin-right: -4em;*/
+    /*transition: 700ms ease;*/
+    
+      &__icon {
+        color: blue;
+        font-size:25px;
+
+        &:checked {
+              animation: checked 0.5s ease;
+          }
+        
+          &:not(:checked) { 
+            animation: unchecked 0.5s ease forwards; 
+          } 
+        }
+      }
+
+      @keyframes checked {
+        from {
+            margin-right: -4em;
+        }
+      
+        to {
+            margin-right: 0em;
+        }
+      }
+      
+      @keyframes unchecked {
+        from {
+            margin-right: 0em;
+        }
+      
+        to {
+            margin-right: -4em;
+        }
+      }
+
+
+  /*&__course__card:active &__cart {
+    margin-right: 0em;
+  }*/
+
+    /*&__course__card:hover &__cart {
+    margin-right: 0em;
+    }*/

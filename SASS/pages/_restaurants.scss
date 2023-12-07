@@ -35,7 +35,7 @@
         font-size: 28px;
       }
 
-      &__course-title {
+      &__course__title {
         @include course-main-title;
         width: 12%;
         padding-bottom: 5px;
@@ -47,26 +47,29 @@
       }
 
 
-      article {
+      &__course__card {
         display: flex;
-        background-color: #FFFFFF;
-        padding: 15px;
+        /*background-color: #FFFFFF;*/
         margin-top: 10px;
         border-radius: 15px;
         flex-wrap: wrap;
         justify-content: space-between;
         box-shadow: 0px 3px 10px rgb(221, 218, 218);
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
-    
+
       .course__text {
         display: flex;
         flex-direction: column;
         gap: 5px;
+        padding: 15px 0 15px 15px;
       }
 
       .price {
         display: flex;
         align-items: flex-end;
+        padding: 15px 0 15px 0;
       }
 
       .price-euro {
