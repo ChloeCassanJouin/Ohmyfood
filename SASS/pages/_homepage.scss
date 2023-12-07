@@ -185,6 +185,7 @@ flex-direction: column;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        position: relative;
 
         &__image {
             height: 200px;
@@ -222,17 +223,11 @@ flex-direction: column;
             border: $tertiary-color;
             background-color: $tertiary-color;
             padding: 8px 10px 8px 10px;
-            position: relative;
-            bottom: 80%;
-            left: 76%;
+            position: absolute;
+            left: 78%;
+            top: 5%;
             color: $twelfth-color;
             width: 55px;
-
-            /*@media (min-width:$min-width-tablet) {
-                position: relative;
-                bottom: 80%;
-                left: 76%;
-             }*/
         }
     }
 }

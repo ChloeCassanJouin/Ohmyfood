@@ -474,15 +474,10 @@ p {
   background-color: #99E2D0;
   padding: 8px 10px 8px 10px;
   position: absolute;
-  bottom: 80%;
-  left: 76%;
+  left: 78%;
+  top: 5%;
   color: #008766;
   width: 55px;
-  /*@media (min-width:$min-width-tablet) {
-      position: relative;
-      bottom: 80%;
-      left: 76%;
-   }*/
 }
 
 /* mobile first*/
