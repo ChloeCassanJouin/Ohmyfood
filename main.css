@@ -127,8 +127,8 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .header__top__2 {
   width: 100%;
