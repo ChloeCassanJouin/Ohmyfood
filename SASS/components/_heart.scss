@@ -17,8 +17,20 @@ color: transparent;
 .like {   
   display: flex;
   align-items: flex-end;
+ position: relative;
+ right: 7%;
+ bottom: 30px;
+
+ @media (max-width:$max-width-mobile) {
+  display: flex;
+  flex-direction: column;
+  bottom: 60px;
+  }
+
 &__checkbox {
   display: none;
+
+
 
   &:checked + .like__container {
     .heart-icon--full {

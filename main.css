@@ -423,6 +423,7 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
   }
 }
 .restaurant .restaurant__a {
@@ -676,6 +677,16 @@ p {
 .like {
   display: flex;
   align-items: flex-end;
+  position: relative;
+  right: 7%;
+  bottom: 30px;
+}
+@media (max-width: 768.9px) {
+  .like {
+    display: flex;
+    flex-direction: column;
+    bottom: 60px;
+  }
 }
 .like__checkbox {
   display: none;
