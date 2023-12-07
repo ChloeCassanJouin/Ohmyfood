@@ -628,27 +628,27 @@ p {
 }
 
 .section__main-course1 {
-  animation: fadeInVisibility 2.5s ease-in-out forwards;
+  animation: fadeInVisibility 2s ease-in-out forwards;
 }
 
 .section__main-course2 {
-  animation: fadeInVisibility 3s ease-in-out forwards;
+  animation: fadeInVisibility 2.5s ease-in-out forwards;
 }
 
 .section__main-course3 {
-  animation: fadeInVisibility 3.5s ease-in-out forwards;
+  animation: fadeInVisibility 3s ease-in-out forwards;
 }
 
 .section__dessert1 {
-  animation: fadeInVisibility 4s ease-in-out forwards;
+  animation: fadeInVisibility 3.5s ease-in-out forwards;
 }
 
 .section__dessert2 {
-  animation: fadeInVisibility 4.5s ease-in-out forwards;
+  animation: fadeInVisibility 4s ease-in-out forwards;
 }
 
 .section__dessert3 {
-  animation: fadeInVisibility 5s ease-in-out forwards;
+  animation: fadeInVisibility 4.5s ease-in-out forwards;
 }
 
 @keyframes fadeInVisibility {
