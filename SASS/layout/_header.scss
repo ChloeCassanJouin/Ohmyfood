@@ -11,8 +11,14 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      
+      @media (min-width:$min-width-tablet) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
     }
 
     &__top__2 {
