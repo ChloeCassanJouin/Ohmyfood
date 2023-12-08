@@ -330,6 +330,11 @@ p {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .function {
+    padding: 0 5% 5% 5%;
+  }
+}
 @media (min-width: 1024px) {
   .function {
     padding: 60px 12% 40px 12%;
@@ -423,10 +428,17 @@ p {
   background-color: #F6F6F6;
   padding: 35px 20px 70px 20px;
 }
+@media (min-width: 768px) {
+  .restaurant {
+    padding-left: 5%;
+    padding-right: 2%;
+    padding-bottom: 40px;
+  }
+}
 @media (min-width: 1024px) {
   .restaurant {
     padding-left: 12%;
-    padding-right: 12%;
+    padding-right: 8%;
     padding-bottom: 40px;
   }
 }
@@ -442,6 +454,7 @@ p {
 .restaurant .restaurant__a {
   width: 45%;
   padding-top: 19px;
+  position: relative;
 }
 .restaurant .restaurant__card {
   background-color: white;
@@ -706,13 +719,19 @@ p {
   align-items: flex-end;
   position: relative;
   right: 7%;
-  bottom: 30px;
 }
 @media (max-width: 768.9px) {
   .like {
     display: flex;
     flex-direction: column;
     bottom: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .like {
+    display: flex;
+    flex-direction: column;
+    top: 230px;
   }
 }
 .like__checkbox {

@@ -17,15 +17,20 @@ color: transparent;
 .like {   
   display: flex;
   align-items: flex-end;
- position: absolute;
+ position: relative;
  right: 7%;
- bottom: 30px;
 
  @media (max-width:$max-width-mobile) {
   display: flex;
   flex-direction: column;
   bottom: 60px;
   }
+
+  @media (min-width:$min-width-tablet) {
+    display: flex;
+    flex-direction: column;
+    top: 230px;
+    }
 
 
 &__checkbox {
