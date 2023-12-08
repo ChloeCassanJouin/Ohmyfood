@@ -295,7 +295,7 @@ p {
   }
 }
 .description .decouvrez-text {
-  white-space: wrap;
+  white-space: pre-wrap;
 }
 .description__subtitle {
   font-weight: 300;
