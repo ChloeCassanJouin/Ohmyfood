@@ -818,8 +818,8 @@ body {
 }
 @media (min-width: 1440px) {
   body {
-    padding-right: 10%;
-    padding-left: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
     width: auto;
   }
 }/*# sourceMappingURL=main.css.map */
