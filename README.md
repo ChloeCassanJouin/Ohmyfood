@@ -17,3 +17,9 @@ Le projet va pouvoir commencer. UX designer a finalisé les maquettes mobile et
 -Le responsive suivra pour les tablettes et ordinateurs
 -Les pages devront passer la validation W3C en HTML et CSS sans erreur. 
 -Le site doit être parfaitement compatible avec les dernières versions desktop de Chrome et Firefox."
+
+Technologies utilisées:
+-HTML5
+-CSS3
+-SASS
+
