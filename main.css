@@ -786,6 +786,8 @@ p {
 .loader-enabled {
   opacity: 0;
   animation: fadeInContent 3s forwards 2s;
+  position: relative;
+  z-index: 10;
 }
 
 @keyframes spin {
@@ -810,7 +812,6 @@ p {
   }
   100% {
     opacity: 0;
-    z-index: -1;
   }
 }
 body {
